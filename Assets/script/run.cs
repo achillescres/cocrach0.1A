@@ -80,6 +80,11 @@ public class run : MonoBehaviour
             anim.SetBool("Ground", false);
             rigidBody.AddForce(new Vector2(0, impulse*3000));
         }
+        if (isGrounded && Input.GetKeyDown(KeyCode.S))
+        {
+            anim.SetBool("Ground", false);
+            rigidBody.AddForce(new Vector2(0, impulse * 3000));
+        }
     }
     void OnTriggerEnter2D(Collider2D col)
     {

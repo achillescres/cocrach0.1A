@@ -36,7 +36,7 @@ public class Damage : MonoBehaviour {
         Health--;
         Rigidbody2D rigid = GetComponent<Rigidbody2D>();
         rigid.velocity = Vector3.zero;
-        rigid.AddForce(new Vector2(0, 200.0f), ForceMode2D.Impulse);
+        rigid.AddForce(new Vector2(100.0f, 200.0f), ForceMode2D.Impulse);
     }
 
     /*void OnGUI()
